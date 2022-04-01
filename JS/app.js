@@ -1,7 +1,9 @@
 let befScrollTop = 0;
 let headerOpacity = 1;
 const Header = document.querySelector('header');
-
+const Images = document.querySelectorAll(".image");
+let isMain = Images.getAttribute("isMain"); 
+let descImage = document.querySelector(".descriptionImage");
 // rotate logo circuit Board on scroll 
 window.onscroll = ('onscroll', () => {
 
@@ -35,3 +37,7 @@ window.onscroll = ('onscroll', () => {
         }, 500);
     }, false);
 });
+
+function newImage(items){
+    items.
+}
