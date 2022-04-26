@@ -11,14 +11,15 @@
     <meta name="author" content="John Muller">
     <meta name="description" content="Security Guard app using raspberry pi ">
     <meta name="keywords"
-        content="JohnMuller, raspberry pi 4, pi, security Guard, Pi Projects, John, JohnDark, Muller, portfolio, junior developer, graphic designer">
+        content="John Muller, raspberry pi 4, pi, security Guard, Pi Projects, John, JohnDark, Muller, portfolio, junior developer, graphic designer">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Security Guard </title>
-    <link rel="icon" href="./Assets/Images/Pictures/John_Muller_Ai_Ui_ProtLogo.svg">
+    <title>Security Guard | Home</title>
+    <link rel="icon" href="./Assets/securityGuardLogo.png">
 
     <!-- CSS Style links -->
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/copyStyle.css">
 
 
     <!-- Font links -->
@@ -32,6 +33,7 @@
 
     <!-- API and Script links -->
     <script src="./JS/app.js" defer></script>
+
 </head>
 
 <body>
@@ -44,17 +46,15 @@
         id="skipNavLink" class="SkipNav">skip navigation bar</a>
 
     <header isInteracting="true">
-        <h1 title="home page" href="./index.html" class="logo">
-            Security Guard
-        </h1>
 
+        <a title="home page" href="./index.html" class="logo">
+            <img src="./Assets/securityGuardLogo.png" alt="security Guard logo">
+        </a>
 
         <nav aria-expanded="true" class="mainNav">
-
-
-
             <!-- pages link list -->
             <ul class="pageLinksList">
+
                 <li class="dirNavLinks">
                     <a aria-label="Home Page button" title="Home page" href="./index.html" class="navLinks"
                         id="navLink1">
@@ -70,78 +70,150 @@
 
 
                 <li class="dirNavLinks">
-                    <input list="progressWeeks" name="progress List" id="progressSelector" placeholder="Progress list"
-                        class="progressSlector">
+                    <a aria-label="Application Page button" title="Application page" href="./Pages/app.html"
+                        class="navLinks" id="navLink1">
+                        App
                     </a>
                 </li>
-
             </ul>
+
+            <dropDownMenu dropDownToggled="false" class="progressDropDownMenu">
+                <span class="dropDownLabel">
+
+                    <p class="dropDownText" itemListed="Progress weeks">Progress weeks</p>
+
+                    <svg class="dropDownIcon">
+                        <use xlink:href="#DROP-DOWN-ICON"></use>
+                    </svg>
+                </span>
+
+                <ul class="dropDownList">
+                    <li class="dropDownLinkParent"><a title="First Week " href="#weekNumOne" class="dropDownLink">
+                            <i class="dropDownIcon-I"> <svg class="dropDownSvgIcon">
+                                    <use xlink:href="#DROP-DOWN-MICRO-ICON"></use>
+                                </svg></i>
+                            First week </a>
+                    </li>
+
+                    <li class="dropDownLinkParent">
+                        <a title="First Week " href="#weekNumTwo" class="dropDownLink">
+                            <i class="dropDownIcon-I"> <svg class="dropDownSvgIcon">
+                                    <use xlink:href="#DROP-DOWN-MICRO-ICON"></use>
+                                </svg></i>
+                            Second week
+                        </a>
+                    </li>
+
+                    <li class="dropDownLinkParent"><a title="First Week " href="#weekNumThree" class="dropDownLink">
+                            <i class="dropDownIcon-I"> <svg class="dropDownSvgIcon">
+                                    <use xlink:href="#DROP-DOWN-MICRO-ICON"></use>
+                                </svg></i>
+                            Third week
+                        </a>
+                    </li>
+
+                    <li class="dropDownLinkParent"><a title="First Week " href="#weekNumFour" class="dropDownLink">
+                            <i class="dropDownIcon-I"> <svg class="dropDownSvgIcon">
+                                    <use xlink:href="#DROP-DOWN-MICRO-ICON"></use>
+                                </svg></i>
+                            Fourth week
+                        </a>
+                    </li>
+
+                    <li class="dropDownLinkParent"><a title="First Week " href="#weekNumFive" class="dropDownLink">
+                            <i class="dropDownIcon-I"> <svg class="dropDownSvgIcon">
+                                    <use xlink:href="#DROP-DOWN-MICRO-ICON"></use>
+                                </svg></i>
+                            Fifth week
+                        </a>
+                    </li>
+                </ul>
+            </dropDownMenu>
+
         </nav>
+
+
     </header>
 
     <main>
         <!-- hero section -->
         <article class="heading">
-            <section class="headingSection left">
-                <div>
-                    <h1 class="headingTitle">Security Guard</h1>
-                    <p class="hedingParagraph">it is a smart robot to replace human in certain places such as home,
-                        offices, server room and ensure real time monitoring and security in the environment its placed
-                        in
-                    </p>
-                </div>
+
+            <img class="heroImage" src="./Assets/HeroSection.svg" width="500px" alt="s">
+
+            <section class="headingSection">
+
+                <h1 class="headingTitle">Security Guard <i class="svgIcon"></i></h1>
+
+                <p class="headingParagraph">it is a smart robot to replace human in certain places such as home,
+                    offices, server room and ensure real time monitoring and security in the environment its placed
+                    in
+                </p>
+
+
                 <div class="callAction">
-                    <!--                     <button class="primaryButton">Explore</button>
---> <button href="#loginDialog" id="loginBtn" class="loginBtnC">Login</button>
+
+                    <!-- <button class="primaryButton">Explore</button> -->
+                    <button href="#loginDialog" id="loginBtn" class="loginBtnC">Login <svg class="btnIcon">
+                            <use xlink:href="#GEARS-ICON-LOGIN"></use>
+                        </svg></button>
                 </div>
+
             </section>
 
-            <section class="headingSection right">
-                <img src="./Assets/71037u7h2PL._AC_SL1500_.png" width="500px">
-            </section>
         </article>
 
         <!-- all contact body -->
         <article class="mainContent">
+
             <!-- Week navigator -->
             <aside class="sectionsListAside">
                 <ul class="sectionsList">
-                    <li class="sectionList"><a title="First Week " href="#weekNumOne" class="sectionLink">&#11044; </a>
-                    </li>
-                    <li class="sectionList"><a title="Second Week " href="#weekNumTwo" class="sectionLink">&#11044; </a>
-                    </li>
-                    <li class="sectionList"><a title="Third Week " href="#weekNumThree" class="sectionLink">&#11044;
+                    <li class="sectionListParent"><a title="First Week " href="#weekNumOne" class="sectionLink">&#11044;
                         </a>
                     </li>
-                    <li class="sectionList"><a title="Fourth Week " href="#weekNumFour" class="sectionLink">&#11044;
+                    <li class="sectionListParent"><a title="Second Week " href="#weekNumTwo"
+                            class="sectionLink">&#11044; </a>
+                    </li>
+                    <li class="sectionListParent"><a title="Third Week " href="#weekNumThree"
+                            class="sectionLink">&#11044;
                         </a>
                     </li>
-                    <li class="sectionList"><a title="fifth Week " href="#weekNumFive" class="sectionLink">&#11044; </a>
+                    <li class="sectionListParent"><a title="Fourth Week " href="#weekNumFour"
+                            class="sectionLink">&#11044;
+                        </a>
+                    </li>
+                    <li class="sectionListParent"><a title="fifth Week " href="#weekNumFive"
+                            class="sectionLink">&#11044; </a>
                     </li>
                 </ul>
             </aside>
 
+            <!-- background Board -->
+            <svg class="backgroundBoard">
+            </svg>
+
             <!-- first week  -->
-            <section class="weekProgress bodyWeek" isIntersecting="false" id="weekNumOne">
+            <section class="weekProgress bodyWeekOne" isIntersecting="false" id="weekNumOne">
 
                 <section class="titleBodySection">
-                    <div class="sectionText">
-                        <h2 class="sectionTextTitle">
-                            <i class="weekTag Open">&lt;First Week&gt;</i>
-                            Hardware setup
-                            <i class="weekTag Close">&lt;/First Week&gt;</i>
-                        </h2>
-                        <p class="sectionDate dateWeek" weekCount="1"> week ago <svg class="calenderIcon">
-                                <use xlink:href="#CALENDER_ICON"></use>
-                            </svg> </p>
-                    </div>
+                    <h2 sectionTitle class="sectionTextTitle">
+                        <i openTag class="weekTag Open">&lt;firstWeek&gt;</i>
+                        Hardware setup
+                        <i closeTag class="weekTag Close">&lt;/firstWeek&gt;</i>
+                    </h2>
+                    <span class="sectionDate" initialDate="2022/3/21" newDate="">
+                        <p class="progressDate"></p>
+                        <svg class="calenderIcon">
+                            <use xlink:href="#CALENDER_ICON"></use>
+                        </svg>
+                    </span>
                 </section>
 
                 <section class="progressSection">
 
                     <video class="weekVideo" width="400" controls autoplay muted>
                         <source src="./Assets/weekOne/IMG_2800.MOV" type="video/MOV">
-                        <source src="mov_bbb.ogg" type="video/ogg">
                     </video>
                     <!-- progress Title and description -->
                     <h4 class="weekProgressTitle">Building up the smart car</h4>
@@ -151,69 +223,699 @@
 
                         <!-- step one Holder-->
 
+                        <div class="stepHolder" stepNum="N/A">
+
+                            <h2 class="subTitle hardwareTitle"> before setup </h2>
+
+                            <img closeButton="" src="./Assets/weekOne/beforesetup.jpg" class="descriptionMainImage"
+                                width="100px" height="100px" isToggled="false" alt="installing wheels">
+
+
+
+                        </div>
                         <div class="stepHolder" stepNum="1">
 
                             <div class="stepTextHolder">
 
-                                <h5 stepNum="1. " class="subTitle hardwareTitle"> Installing motors on board</h5>
+                                <h5 stepNum="1. " class="subTitle hardwareTitle"> Installing wheels on board</h5>
 
-                                <p class="subDescription hardwareDescription">Lorem ipsum dolor sit amet
-                                    consectetur
-                                    adipisicing elit. Fugiat natus voluptates numquam provident nesciunt fuga?
+                                <p class="subDescription hardwareDescription">
+                                    <i class="listBullet">&#11044;</i> Installing motors on 4WD board <br>
+                                    <i class="listBullet">&#11044;</i> installing wheels on motors <br>
+                                    <i class="listBullet">&#11044;</i> connect cables to the board
                                 </p>
                             </div>
 
                             <div class="imageShow">
-                                <img closeButton="" src="./Assets/weekOne/IMG_2808.JPG" class="descriptionImage"
+                                <img closeButton="" src="./Assets/weekOne/motorandwheels.jpg" class="descriptionImage"
                                     width="100px" height="100px" isToggled="false" alt="installing wheels">
                             </div>
 
                         </div>
 
+                        <div class="stepHolder" stepNum="2">
+
+                            <div class="stepTextHolder">
+
+                                <h5 stepNum="2. " class="subTitle hardwareTitle"> build the head </h5>
+
+                                <p class="subDescription hardwareDescription">
+                                    <i class="listBullet">&#11044;</i> set and customize the servo motors on bottom part
+                                    and top part <br>
+                                    <i class="listBullet">&#11044;</i> install distance sensor on top part <br>
+                                    <i class="listBullet">&#11044;</i> install camera on top part <br>
+                                    <i class="listBullet">&#11044;</i> join the two parts (bottom and top) <br>
+                                    <i class="listBullet">&#11044;</i> install the head part on 4WD board <br>
+                                    <i class="listBullet">&#11044;</i> connect cables to the board
+                                </p>
+                            </div>
+
+                            <div class="imageShow">
+                                <img closeButton="" src="./Assets/weekOne/head.JPG" class="descriptionImage"
+                                    width="100px" height="100px" isToggled="false" alt="installing wheels">
+                            </div>
+
+                        </div>
+
+                        <div class="stepHolder" stepNum="3
+                        ">
+
+                            <div class="stepTextHolder">
+
+                                <h5 stepNum="3
+                                . " class="subTitle hardwareTitle"> install raspberry pi 4 on board </h5>
+
+                                <p class="subDescription hardwareDescription">
+                                    <i class="listBullet">&#11044;</i> set the standoffs <br>
+                                    <i class="listBullet">&#11044;</i> installing wheels on motors <br>
+                                    <i class="listBullet">&#11044;</i> content cables on board
+                                </p>
+                            </div>
+
+                            <div class="imageShow">
+                                <img closeButton="" src="./Assets/weekOne/installPionBoard.JPG" class="descriptionImage"
+                                    width="100px" height="100px" isToggled="false" alt="installing wheels">
+                            </div>
+
+                        </div>
+
+                        <div class="stepHolder" stepNum="4">
+
+                            <div class="stepTextHolder">
+
+                                <h5 stepNum="4. " class="subTitle hardwareTitle"> install the line tracker sensor </h5>
+
+                                <p class="subDescription hardwareDescription">
+                                    <i class="listBullet">&#11044;</i> install standoffs 10 on board <br>
+                                    <i class="listBullet">&#11044;</i> set line tracker on standoffs <br>
+                                    <i class="listBullet">&#11044;</i> content cables on board
+                                </p>
+                            </div>
+
+                            <div class="imageShow">
+                                <img closeButton="" src="./Assets/weekOne/linetracker.JPG" class="descriptionImage"
+                                    width="100px" height="100px" isToggled="false" alt="installing wheels">
+                            </div>
+
+                        </div>
+
+                        <div class="stepHolder" stepNum="5">
+
+                            <div class="stepTextHolder">
+
+                                <h5 stepNum="5. " class="subTitle hardwareTitle"> connect all wires on board and pi
+                                </h5>
+
+                                <p class="subDescription hardwareDescription">
+                                    <i class="listBullet">&#11044;</i> connect pi camera on pi port <br>
+                                    <i class="listBullet">&#11044;</i> connect distance sensor on board <br>
+                                    <i class="listBullet">&#11044;</i> content servo motors connectors on board <br>
+                                    <i class="listBullet">&#11044;</i> content batteries on board
+                                </p>
+                            </div>
+
+                            <div class="imageShow">
+                                <img closeButton="" src="./Assets/weekOne/piConnectors.jpeg" class="descriptionImage"
+                                    width="100px" height="100px" isToggled="false" alt="installing wheels">
+                            </div>
+
+                        </div>
+
+                        <div class="stepHolder" stepNum="N/A">
+
+                            <h2 class="subTitle hardwareTitle"> after setup </h2>
+
+                            <img closeButton="" src="./Assets/weekOne/afterSetup.JPG" class="descriptionMainImage"
+                                width="100px" height="100px" isToggled="false" alt="installing wheels">
+
+
+
+                        </div>
+
+
+                    </setupHardware>
+                </section>
+                <aside class="rightSideSticky">
+                    <!-- Gallery holder -->
+                    <aside class="galleryHolder">
+                        <!-- main image it's going to be displayed on top -->
+                        <img isMain="true" class="topImage mainImage" width="100px" height="100px"
+                            src="./Assets/weekOne/beforesetup.jpg" alt="installing wheels">
+                        <!-- sub Images -->
+                        <div class="gallery">
+                            <img isMain="false" class="galleryimage subImage " width="100px" height="100px"
+                                src="./Assets/weekOne/000.JPG" alt="installing wheels">
+                            <img isMain="false" class="galleryimage subImage " width="100px" height="100px"
+                                src="./Assets/weekOne/01.JPG" alt="installing wheels">
+                            <img isMain="false" class="galleryimage subImage " width="100px" height="100px"
+                                src="./Assets/weekOne/001.JPG" alt="installing wheels">
+                            <img isMain="false" class="galleryimage subImage " width="100px" height="100px"
+                                src="./Assets/weekOne/02.JPG" alt="installing wheels">
+                            <img isMain="false" class="galleryimage subImage " width="100px" height="100px"
+                                src="./Assets/weekOne/03.JPG" alt="installing wheels">
+                            <img isMain="false" class="galleryimage subImage " width="100px" height="100px"
+                                src="./Assets/weekOne/003.JPG" alt="installing wheels">
+                            <img isMain="false" class="galleryimage subImage " width="100px" height="100px"
+                                src="./Assets/weekOne/004.JPG" alt="installing wheels">
+                            <img isMain="false" class="galleryimage subImage " width="100px" height="100px"
+                                src="./Assets/weekOne/04.JPG" alt="installing wheels">
+                            <img isMain="false" class="galleryimage subImage " width="100px" height="100px"
+                                src="./Assets/weekOne/05.JPG" alt="installing wheels">
+                            <img isMain="false" class="galleryimage subImage " width="100px" height="100px"
+                                src="./Assets/weekOne/06.JPG" alt="installing wheels">
+
+                            <img isMain="false" class="galleryimage subImage " width="100px" height="100px"
+                                src="./Assets/weekOne/07.JPG" alt="installing wheels">
+
+                            <img isMain="false" class="galleryimage subImage " width="100px" height="100px"
+                                src="./Assets/weekOne/08.JPG" alt="installing wheels">
+
+                            <img isMain="false" class="galleryimage subImage " width="100px" height="100px"
+                                src="./Assets/weekOne/09.JPG" alt="installing wheels">
+
+                            <img isMain="false" class="galleryimage subImage " width="100px" height="100px"
+                                src="./Assets/weekOne/linetracker.JPG" alt="installing wheels">
+
+                            <img isMain="false" class="galleryimage subImage " width="100px" height="100px"
+                                src="./Assets/weekOne/011.JPG" alt="installing wheels">
+                            <img isMain="false" class="galleryimage subImage " width="100px" height="100px"
+                                src="./Assets/weekOne/012.JPG" alt="installing wheels">
+                            <img isMain="false" class="galleryimage subImage " width="100px" height="100px"
+                                src="./Assets/weekOne/013.JPG" alt="installing wheels">
+                            <img isMain="false" class="galleryimage subImage " width="100px" height="100px"
+                                src="./Assets/weekOne/014.JPG" alt="installing wheels">
+                            <img isMain="false" class="galleryimage subImage " width="100px" height="100px"
+                                src="./Assets/weekOne/020.JPG" alt="installing wheels">
+                            <img isMain="false" class="galleryimage subImage " width="100px" height="100px"
+                                src="./Assets/weekOne/021.JPG" alt="installing wheels">
+                            <img isMain="false" class="galleryimage subImage " width="100px" height="100px"
+                                src="./Assets/weekOne/022.JPG" alt="installing wheels">
+                            <img isMain="false" class="galleryimage subImage " width="100px" height="100px"
+                                src="./Assets/weekOne/023.JPG" alt="installing wheels">
+                            <img isMain="false" class="galleryimage subImage " width="100px" height="100px"
+                                src="./Assets/weekOne/024.JPG" alt="installing wheels">
+                            <img isMain="false" class="galleryimage subImage " width="100px" height="100px"
+                                src="./Assets/weekOne/025.JPG" alt="installing wheels">
+                            <img isMain="false" class="galleryimage subImage " width="100px" height="100px"
+                                src="./Assets/weekOne/026.JPG" alt="installing wheels">
+                            <img isMain="false" class="galleryimage subImage " width="100px" height="100px"
+                                src="./Assets/weekOne/027.JPG" alt="installing wheels">
+                            <img isMain="false" class="galleryimage subImage " width="100px" height="100px"
+                                src="./Assets/weekOne/050.JPG" alt="installing wheels">
+                            <img isMain="false" class="galleryimage subImage " width="100px" height="100px"
+                                src="./Assets/weekOne/afterSetup.JPG" alt="installing wheels">
+
+                        </div>
+
+                    </aside>
+
+                    <aside class="componentsAside">
+                        <h3 class="componentsTitle" weekNum="1"> Components used </h3>
+                        <ul class="componentsList">
+                            <li class="linkParent"> Wheels</li>
+                            <li class="linkParent"> raspberry pi 4</li>
+                            <li class="linkParent"> smart board</li>
+                            <li class="linkParent"> Pi camera</li>
+                            <li class="linkParent"> Screw</li>
+                            <li class="linkParent"> Motors</li>
+                            <li class="linkParent"> Sensor</li>
+                            <li class="linkParent"> LEDs</li>
+                        </ul>
+                    </aside>
+                </aside>
+            </section>
+
+            <!-- Second week  -->
+            <section class="weekProgress bodyWeekTwo" isIntersecting="false" id="weekNumTwo">
+                <section class="titleBodySection">
+                    <h2 class="sectionTextTitle">
+                        <i class="weekTag Open">&lt;secondWeek&gt;</i>
+                        setup the raspberry pi
+                        <i class="weekTag Close">&lt;/secondWeek&gt;</i>
+                    </h2>
+                    <span class="sectionDate" initialDate="2022/3/27" newDate="">
+                        <p class="progressDate"></p>
+                        <svg class="calenderIcon">
+                            <use xlink:href="#CALENDER_ICON"></use>
+                        </svg>
+                    </span>
+
+                </section>
+
+                <section class="progressSection">
+
+                    <img class="weekSetupImage" src="./Assets/weekTwo/setup-raspberry-pi.png"
+                        alt="setup raspberry pi for smart car">
+                    <!-- progress Title and description -->
+                    <h4 class="weekProgressTitle">install libraries and enable features on raspberry pi <br> to be
+                        compatible for smart car components </h4>
+
+                    <!-- progress list  -->
+                    <setupHardware class="setupSection" week="weekTwo">
+
+                        <!-- step one Holder-->
+
+                        <div class="stepHolder" stepNum="1">
+                            <div class="stepTextHolder">
+                                <h5 stepNum="1. " class="subTitle hardwareTitle"> install operating system on the pi
+                                </h5>
+
+                                <p class="subDescription hardwareDescription">
+                                    <i class="listBullet">&#11044;</i> install OS raspbian 32
+                                    <br>
+                                    <span class="subsectionText"> <i class="listBullet subsectionMarker">&#182;</i>
+                                        using raspberry pi Imager v1.7</span>
+                                    <br>
+                                    <i class="listBullet">&#11044;</i> update and upgrade apt packages <br>
+                                    <i class="listBullet">&#11044;</i> enable ssh, camera, I2C, Remote GPIO, and VNC
+                                    <space space="1"> connections <br>
+                                </p>
+                            </div>
+
+                            <div class="imageShow">
+                                <img closeButton="" src="./Assets/weekTwo/Screenshot 2022-04-22 173238.png"
+                                    class="descriptionImage" width="100px" height="100px" isToggled="false"
+                                    alt="installing wheels">
+                            </div>
+
+                            <section class="code">
+                                <div class="customBar">
+                                    <i class="Bullet One">&#11044;</i>
+                                    <i class="Bullet Two">&#11044;</i>
+                                    <i class="Bullet Three">&#11044;</i>
+                                </div>
+                                <code language="linuxTerminal">
+                                <span class="comment">#Run the following command</span>   <br>
+                                <span class="comment"># 1 to make sure that the system is uptodate</span>   <br>
+                                <span class="user"> raspberry@Host<span class="symbol">:~$</span></span> <span class="command" isCopied="false">sudo apt-get update  <span class="symbol"> && </span>  sudo apt-get upgrade <i class="copyIcon"> <svg class="copyIconSvg"><use xlink:href="#COPY-ICON"></use></svg></i></span>  <br>
+                                <span class="comment"># 2 to enable interface features on pi</span> <br>
+                                <span class="user"> raspberry@Host<span class="symbol">:~$</span></span> <span class="command" isCopied="false">sudo raspi-config <i class="copyIcon"> <svg class="copyIconSvg"><use xlink:href="#COPY-ICON"></use></svg></i></span>
+                                </code>
+                            </section>
+                        </div>
+
+                        <div class="stepHolder" stepNum="2">
+                            <div class="stepTextHolder">
+                                <h5 stepNum="2. " class="subTitle hardwareTitle"> Install python </h5>
+
+                                <p class="subDescription hardwareDescription">
+                                    <i class="listBullet">&#11044;</i> Installing python 3 <br>
+                                    <i class="listBullet">&#11044;</i> installing Freenove_RPI_WS281x_Python library<br>
+                                    <i class="listBullet">&#11044;</i> installing python3-dev library<br>
+                                    <i class="listBullet">&#11044;</i> installing python3-pyqt5 library
+
+                                </p>
+                            </div>
+
+                            <div class="imageShow">
+                                <img closeButton="" src="./Assets/weekTwo/Screenshot 2022-04-24 135917.png"
+                                    class="descriptionImage" width="100px" height="100px" isToggled="false"
+                                    alt="installing wheels">
+                            </div>
+
+                            <section class="code">
+                                <div class="customBar">
+                                    <i class="Bullet One">&#11044;</i>
+                                    <i class="Bullet Two">&#11044;</i>
+                                    <i class="Bullet Three">&#11044;</i>
+                                </div>
+                                <code language="linuxTerminal">
+                                <span class="comment">#Run the following command</span>   <br>
+                                <span class="comment"># 1 install python</span>   <br>
+                                <span class="user"> raspberry@Host<span class="symbol">:~$</span></span> 
+                                <span class="command" isCopied="false">sudo apt-get install python python3
+                                    <i class="copyIcon">
+                                        <svg class="copyIconSvg">
+                                            <use xlink:href="#COPY-ICON"></use>
+                                        </svg>
+                                    </i>
+                                </span> 
+                                <br>
+                                <span class="comment"># 2 install dependencies</span> <br>
+                                <span class="user"> raspberry@Host<span class="symbol">:~$</span></span> 
+                                <span class="command" isCopied="false">sudo apt-get install -y python3-dev python3-pyqt5
+                                    <i class="copyIcon">
+                                        <svg class="copyIconSvg">
+                                            <use xlink:href="#COPY-ICON"></use>
+                                        </svg>
+                                    </i>
+                                </span> <br>
+                                <span class="comment"># 3 clone python library from freenove for 4wd Smart car </span> <br>
+                                <span class="user"> raspberry@Host<span class="symbol">:~$</span></span> 
+                                <span class="command" isCopied="false">git clone https://github.com/Freenove/Freenove_RPI_WS281x_Python.git                                        <i class="copyIcon">
+                                        <svg class="copyIconSvg">
+                                            <use xlink:href="#COPY-ICON"></use>
+                                        </svg>
+                                    </i>
+                                </span> 
+                               
+                            </code>
+                            </section>
+
+                        </div>
+
+                        <div class="stepHolder" stepNum="3">
+
+                            <div class="stepTextHolder">
+                                <h5 stepNum="3. " class="subTitle hardwareTitle"> install PyAudio for voice recognition
+                                </h5>
+
+                                <p class="subDescription hardwareDescription">
+                                    <i class="listBullet">&#11044;</i> $ install libportaudio0 libportaudio2
+                                    <space space="2"> libportaudiocpp0 portaudio19-dev flac libraries
+                                        <br>
+                                        <i class="listBullet">&#11044;</i> $ create virtual environment
+                                        <br>
+                                        <i class="listBullet">&#11044;</i> $ activate the virtual environment <br>
+                                        <i class="listBullet">&#11044;</i> $ install pyaudio requests websockets using
+                                        pip
+                                </p>
+                            </div>
+
+                            <div class="imageShow">
+                                <img closeButton="" src="./Assets/weekTwo/Screenshot 2022-04-24 141802.png"
+                                    class="descriptionImage" width="100px" height="100px" isToggled="false"
+                                    alt="installing wheels">
+                            </div>
+
+                            <section class="code">
+                                <div class="customBar">
+                                    <i class="Bullet One">&#11044;</i>
+                                    <i class="Bullet Two">&#11044;</i>
+                                    <i class="Bullet Three">&#11044;</i>
+                                </div>
+                                <code language="Terminal">
+                    <span class="comment">#Run the following command</span>   <br>
+                    <span class="comment"># 1 to install libraries</span>   <br>
+                    <span class="user"> raspberry@Host<span class="symbol">:~$</span></span>
+                        <span class="command" isCopied="false">sudo apt-get install libportaudio0 libportaudio2
+                            libportaudiocpp0 portaudio19-dev flac 
+                            <i class="copyIcon">
+                                <svg class="copyIconSvg"><use xlink:href="#COPY-ICON"></use></svg>
+                            </i>
+                        </span>
+                    <span class="comment"># 2 create virtual environment</span>   <br>
+                    <span class="user"> raspberry@Host<span class="symbol">:~$</span></span>
+                        <span class="command" isCopied="false">python3 -m venv venv 
+                            <i class="copyIcon">
+                                <svg class="copyIconSvg"><use xlink:href="#COPY-ICON"></use></svg>
+                            </i>
+                        </span>
+                        <br>
+                    <span class="comment"># 3 activate virtual environment</span>   <br>
+                    <span class="user"> raspberry@Host<span class="symbol">:~$</span></span>
+                        <span class="command" isCopied="false">. venv/bin/activate 
+                            <i class="copyIcon">
+                                <svg class="copyIconSvg"><use xlink:href="#COPY-ICON"></use></svg>
+                            </i>
+                        </span>
+                        <br>
+                    <span class="comment"># 4 install dependencies inside the virtual environment</span>   <br>
+                    <span class="user"> raspberry@Host<span class="symbol">:~$</span></span>
+                        <span class="command" isCopied="false"> pip install pyaudio requests websockets  
+                            <i class="copyIcon">
+                                <svg class="copyIconSvg"><use xlink:href="#COPY-ICON"></use></svg>
+                            </i>
+                        </span>
+                        <br>
+                                </code>
+                            </section>
+                        </div>
+
+                        <div class="stepHolder" stepNum="4">
+
+                            <div class="stepTextHolder">
+                                <h5 stepNum="4. " class="subTitle hardwareTitle"> setup pushing email notifications
+                                    system
+                                </h5>
+
+                                <p class="subDescription hardwareDescription">
+                                    <i class="listBullet">&#11044;</i> $ install ssmtp mailutils<br>
+                                    <i class="listBullet">&#11044;</i> $ create a gmail account for the smart car <br>
+                                    <i class="listBullet">&#11044;</i> $ create app password to allow python login and
+                                    <space space="2"> send mails <br>
+                                        <i class="listBullet">&#11044;</i> $ create a python script to send email from
+                                        the <space space="2"> smart car<br>
+                                </p>
+                            </div>
+
+                            <div class="imageShow">
+                                <img closeButton="" src="./Assets/weekTwo/profile.png" class="descriptionImage"
+                                    width="100px" height="100px" isToggled="false" alt="smart car gmail profile">
+                            </div>
+
+                            <section class="code">
+                                <div class="customBar">
+                                    <i class="Bullet One">&#11044;</i>
+                                    <i class="Bullet Two">&#11044;</i>
+                                    <i class="Bullet Three">&#11044;</i>
+                                </div>
+                                <code language="python">
+                                        <span class="comment"> # import dependencies </span>  <br>
+                                        <span class="builtInFunction"> import </span> <span class="Library"> smtplib </span><br>
+                                        <span class="builtInFunction"> import </span> <span class="Library"> os </span><br>
+                                        <span class="builtInFunction"> from </span> <span class="Library"> email.message <span class="builtInFunction"> import </span> EmailMessage </span> <br>
+                                        <span class="builtInFunction"> from </span> <span class="Library"> datetime <span class="builtInFunction"> import </span> datetime </span> <br>
+                                        <br>
+                                        <span class="comment"> # get current date and time  </span><br>
+                                        <span class="variable">currentTime </span> = <span class="Library">datetime.</span><span class="builtInFunction">now</span>().<span class="builtInFunction" >strftime</span>(<span class="string">"%H:%M:%S"</span>) <br>
+                                        <br>
+                                        <span class="comment"> # declare credentials for login </span>  <br>
+                                        <span class="variable">Email </span> = <span class="Library">os</span>.<span class="builtInFunction">environ</span>.<span class="builtInFunction">get</span>(<span class="string">'ADMIN_EMAIL'</span>) <br>
+                                        <span class="variable">Password </span> = <span class="Library">os</span>.<span class="builtInFunction">environ</span>.<span class="builtInFunction">get</span>(<span class="string">'ADMIN_PASSWORD'</span>) <br>
+                                        <br>
+                                        <span class="comment"> #  send message to   </span> <br>
+                                        <span class="variable">Receiver</span> = <span class="string">"godsaveme2001@gmail.com" </span> <br>
+                                        <br>
+                                        <span class="comment"> # setup the server connection  </span> <br>
+                                        <span class="variable">mailServer</span> = <span class="Library">smtplib.</span><span class="builtInFunction">SMTP_SSL</span></span>(<span class="string">'smtp.gmail.com'</span>, <var>465</var>) <br>
+                                        <br>
+                                        <span class="comment"> # Message </span> <br>
+                                        <span class="variable">messageToSend</span> = <span class="Library">EmailMessage</span>() <br>
+                                        <br>
+                                        <span class="variable">messageToSend</span>[<span class="string">'Subject'</span>] = <span class="string">'evening summary' </span> <br>
+                                        <span class="variable">messageToSend</span>[<span class="string">'From'</span>] = <span class="variable">Email</span> <br>
+                                        <span class="variable">messageToSend</span>[<span class="string">'TO'</span>] = <span class="variable">Receiver</span> <br>
+                                        <span class="variable">messageToSend</span>.<span class="builtInFunction">set_content</span>(<var>f</var><span class="string">"This is your evening summary from smart car <var class="darker">\n</var> at <var class="unset">{</var><span class="variable">currentTime</span><var class="unset">}</var>all looks good!"</span>) <br>
+                                        <br>
+                                        <span class="comment"> # check if login is successful if not print a message </span> <br>
+                                        <span class="builtInFunction"> try: </span>
+                                            <space space="2"> <span class="variable">mailServer</span>.<span class="builtInFunction">login</span>(<span class="variable">Email</span>, <span class="variable"> Password</span>) <br>
+                                            <span class="builtInFunction">except</span> <span class="Library">NameError</span> <span class="builtInFunction">as</span> <span class="variable">loginError</span>: <br>
+                                            <space space="2">  <span class="builtInFunction">print</span>(<var>f</var><span class="string">"an error occur while trying to login please check the credentials \n <space space="2">[<var class="unset">{</var><span class="varible">loginError</span><var class="unset">}</var>]"</span>) <br>
+                                        <span class="comment"> # send email and if an error occurs print a message  </span> <br>
+                                        <span class="builtInFunction"> try: </span> <br>
+                                           <space space="2">  <span class="variable">mailServer</span>.<span class="builtInFunction">send_message</span>(<span class="variable">messageToSend</span>) <br>
+                                            <span class="builtInFunction">except</span> <span class="Library">NameError</span> <span class="builtInFunction">as</span>  <span class="variable">sendMessageError</span>: <br>
+                                           <space space="2">  <span class="builtInFunction">print</span>(<var>f</var><span class="string">"An exception occurred <var class="darker">\n</var> <var class="unset">{</var><span class="variable">sendMessageError</span><var class="unset">}</var>"</span>) <br>
+                                        <br>
+                                        <span class="builtInFunction">print</span>(<span class="string">"mail has been sent successfully!"</span>) <br>
+                                        <br>
+                                        <span class="comment"> # close connection</span>  <br>
+                                        <span class="variable">mailServer</span>.<span class="builtInFunction">quit</span>()<br>
+                                </code>
+                                <i class="copyIcon Script">
+                                    <svg class="copyIconSvg">
+                                        <use xlink:href="#COPY-ICON"></use>
+                                    </svg>
+                                </i>
+
+                            </section>
+                        </div>
+
+
+
                     </setupHardware>
                 </section>
 
-                <!-- Gallery holder -->
-                <div class="galleryHolder">
-                    <!-- main image it's going to be displayed on top -->
-                    <img isMain="true" class="descriptionImage mainImage" width="100px" height="100px"
-                        src="./Assets/weekOne/IMG_2808.JPG" alt="installing wheels">
-                    <!-- sub Images -->
-                    <div class="gallery">
-                        <img isMain="false" class="galleryimage subImage " width="100px" height="100px"
-                            src="./Assets/weekOne/IMG_2809.JPG" alt="installing wheels">
-                        <img isMain="false" class="galleryimage subImage " width="100px" height="100px"
-                            src="./Assets/weekOne/IMG_2810.JPG" alt="installing wheels">
-                        <img isMain="false" class="galleryimage subImage " width="100px" height="100px"
-                            src="./Assets/weekOne/IMG_2808.JPG" alt="installing wheels">
-                        <img isMain="false" class="galleryimage subImage " width="100px" height="100px"
-                            src="./Assets/weekOne/IMG_2808.JPG" alt="installing wheels">
-                        <img isMain="false" class="galleryimage subImage " width="100px" height="100px"
-                            src="./Assets/weekOne/IMG_2808.JPG" alt="installing wheels">
-                        <img isMain="false" class="galleryimage subImage " width="100px" height="100px"
-                            src="./Assets/weekOne/IMG_2808.JPG" alt="installing wheels">
-                        <img isMain="false" class="galleryimage subImage " width="100px" height="100px"
-                            src="./Assets/weekOne/IMG_2808.JPG" alt="installing wheels">
-                        <img isMain="false" class="galleryimage subImage " width="100px" height="100px"
-                            src="./Assets/weekOne/IMG_2808.JPG" alt="installing wheels">
-                    </div>
+                <aside class="rightSideSticky">
+                    <!-- Gallery holder -->
+                    <aside class="galleryHolder">
+                        <!-- main image it's going to be displayed on top -->
+                        <img isMain="true" class="topImage mainImage" width="100px" height="100px"
+                            src="./Assets/weekTwo/Screenshot 2022-04-22 173238.png" alt="installing wheels">
+                        <!-- sub Images -->
+                        <div class="gallery">
+                            <img isMain="false" class="galleryimage subImage " width="100px" height="100px"
+                                src="./Assets/weekTwo/Screenshot 2022-04-22 173443.png" alt="installing wheels">
+                            <img isMain="false" class="galleryimage subImage " width="100px" height="100px"
+                                src="./Assets/weekTwo/Screenshot 2022-04-23 002421.png" alt="installing wheels">
+                            <img isMain="false" class="galleryimage subImage " width="100px" height="100px"
+                                src="./Assets/weekTwo/Screenshot 2022-04-23 004608.png" alt="installing wheels">
+                            <img isMain="false" class="galleryimage subImage " width="100px" height="100px"
+                                src="./Assets/weekTwo/Screenshot 2022-04-23 004659.png" alt="installing wheels">
+                            <img isMain="false" class="galleryimage subImage " width="100px" height="100px"
+                                src="./Assets/weekTwo/Screenshot 2022-04-23 005232.png" alt="installing wheels">
+                            <img isMain="false" class="galleryimage subImage " width="100px" height="100px"
+                                src="./Assets/weekTwo/Screenshot 2022-04-23 005209.png" alt="installing wheels">
+                            <img isMain="false" class="galleryimage subImage " width="100px" height="100px"
+                                src="./Assets/weekTwo/Screenshot 2022-04-24 134753.png" alt="installing wheels">
+                            <img isMain="false" class="galleryimage subImage " width="100px" height="100px"
+                                src="./Assets/weekTwo/Screenshot 2022-04-24 135917.png" alt="installing wheels">
+                            <img isMain="false" class="galleryimage subImage " width="100px" height="100px"
+                                src="./Assets/weekTwo/Screenshot 2022-04-24 140748.png" alt="installing wheels">
+                            <img isMain="false" class="galleryimage subImage " width="100px" height="100px"
+                                src="./Assets/weekTwo/Screenshot 2022-04-24 141802.png" alt="installing wheels">
+                            <img isMain="false" class="galleryimage subImage " width="100px" height="100px"
+                                src="./Assets/weekTwo/installlib.png" alt="installing wheels">
+                            <img isMain="false" class="galleryimage subImage " width="100px" height="100px"
+                                src="./Assets/weekTwo/ssmtpconfigfile.png" alt="installing wheels">
+                            <img isMain="false" class="galleryimage subImage " width="100px" height="100px"
+                                src="./Assets/weekTwo/profile.png" alt="installing wheels">
+                            <img isMain="false" class="galleryimage subImage " width="100px" height="100px"
+                                src="./Assets/weekTwo/appPAssword.png" alt="installing wheels">
+                            <img isMain="false" class="galleryimage subImage " width="100px" height="100px"
+                                src="./Assets/weekTwo/script.png" alt="installing wheels">
+                            <img isMain="false" class="galleryimage subImage " width="100px" height="100px"
+                                src="./Assets/weekTwo/setup-raspberry-pi.png" alt="installing wheels">
 
-                </div>
+                        </div>
 
-                <aside class="componentsAside">
-                    <h3 class="componentsTitle" weekNum="1"> Components used </h3>
-                    <ul class="componentsList">
-                        <li class="linkParent"> Wheels</li>
-                        <li class="linkParent"> raspberry pi 4</li>
-                        <li class="linkParent"> smart board</li>
-                        <li class="linkParent"> Pi camera</li>
-                        <li class="linkParent"> Screw</li>
-                        <li class="linkParent"> Motors</li>
-                        <li class="linkParent"> Sensor</li>
-                        <li class="linkParent"> LEDs</li>
-                    </ul>
+                    </aside>
+
+                    <aside class="componentsAside">
+                        <h3 class="componentsTitle" weekNum="2"> software configuration </h3>
+                        <ul class="componentsList">
+                            <li class="linkParent"> raspberry Pi os</li>
+                            <li class="linkParent"> enable features</li>
+                            <li class="linkParent"> update packages</li>
+                            <li class="linkParent"> install python</li>
+                            <li class="linkParent"> install python dependency</li>
+                            <li class="linkParent"> install PyAudio</li>
+                        </ul>
+                    </aside>
                 </aside>
             </section>
+
+            <!-- Third week  -->
+            <section class="weekProgress bodyWeekThree" isIntersecting="false" id="weekNumThree">
+
+                <section class="titleBodySection">
+                    <h2 class="sectionTextTitle">
+                        <i class="weekTag Open">&lt;thirdWeek&gt;</i>
+                        code setup and testing components
+                        <i class="weekTag Close">&lt;/thirdWeek&gt;</i>
+                    </h2>
+                    <span class="sectionDate" initialDate="2022/4/03" newDate="">
+                        <p class="progressDate"> </p>
+                        <svg class="calenderIcon">
+                            <use xlink:href="#CALENDER_ICON"></use>
+                        </svg>
+                    </span>
+
+                </section>
+
+                <section class="progressSection">
+
+                    <video class="weekVideo" width="400" controls autoplay muted>
+                        <source src="./Assets/weekOne/IMG_2800.MOV" type="video/MOV">
+                    </video>
+                    <!-- progress Title and description -->
+                    <h4 class="weekProgressTitle">Build code to test the smart car components </h4>
+
+                    <!-- progress list  -->
+                    <setupHardware class="setupSection">
+
+                        <!-- step one Holder-->
+
+                        <div class="stepHolder videoUpdate" stepNum="1">
+                            <h5 stepNum="1. " class="subTitle hardwareTitle"> Test wheels motors </h5>
+                            <video class="testComponentsVideo" isPlaying="false" muted>
+                                <source src="./Assets/weekThree/Videos/wheelsMotors.mp4" type="video/mp4">
+                            </video>
+                        </div>
+
+                        <div class="stepHolder videoUpdate" stepNum="2">
+                            <h5 stepNum="2. " class="subTitle hardwareTitle"> Test servo motors </h5>
+                            <video class="testComponentsVideo" isPlaying="false" muted>
+                                <source src="./Assets/weekThree/Videos/servoMotor.mp4" type="video/mp4">
+                            </video>
+                        </div>
+
+                        <div class="stepHolder videoUpdate" stepNum="3">
+                            <h5 stepNum="3. " class="subTitle hardwareTitle"> Test LEDs </h5>
+                            <video class="testComponentsVideo" isPlaying="false" muted>
+                                <source src="./Assets/weekThree/Videos/LEDs.mp4" type="video/mp4">
+                            </video>
+                        </div>
+
+                        <div class="stepHolder videoUpdate" stepNum="4">
+                            <h5 stepNum="4. " class="subTitle hardwareTitle"> Test Buzzer </h5>
+
+                            <video class="testComponentsVideo" isPlaying="false">
+                                <source src="./Assets/weekThree/Videos/buzzer.mp4" type="video/mp4">
+                            </video>
+                        </div>
+
+                        <div class="stepHolder videoUpdate" stepNum="5">
+                            <h5 stepNum="5. " class="subTitle hardwareTitle"> Test distance sensor</h5>
+
+                            <video class="testComponentsVideo" isPlaying="false" >
+                                <source src="./Assets/weekThree/Videos/distanceSensor.mp4" type="video/mp4">
+                            </video>
+                        </div>
+
+                        <div class="stepHolder videoUpdate" stepNum="6">
+                            <h5 stepNum="6. " class="subTitle hardwareTitle"> Test line tracking sensor</h5>
+
+                            <video class="testComponentsVideo" isPlaying="false" muted>
+                                <source src="./Assets/weekThree/Videos/buzzer.mp4" type="video/mp4">
+                            </video>
+
+                        </div>
+
+                        <div class="stepHolder videoUpdate" stepNum="7">
+                            <h5 stepNum="7. " class="subTitle hardwareTitle"> Test camera</h5>
+
+                            <video class="testComponentsVideo" isPlaying="false" muted>
+                                <source src="./Assets/weekThree/Videos/buzzer.mp4" type="video/mp4">
+                            </video>
+
+                        </div>
+
+                        <div class="stepHolder videoUpdate" stepNum="8">
+                            <h5 stepNum="8. " class="subTitle hardwareTitle"> Test light tracking</h5>
+
+                            <video class="testComponentsVideo" isPlaying="false" muted>
+                                <source src="./Assets/weekThree/Videos/buzzer.mp4" type="video/mp4">
+                            </video>
+
+                        </div>
+                    </setupHardware>
+                </section>
+                <aside class="rightSideSticky">
+                    <!-- Gallery holder -->
+                    <aside class="galleryHolder">
+                        <!-- main image it's going to be displayed on top -->
+                        <img isMain="true" class="topImage mainImage" width="100px" height="100px"
+                            src="./Assets/weekThree/Videos/mainVideo.mp4" alt="testing Components all in one Video">
+                        <!-- sub Images -->
+                        <div class="gallery">
+                            <img isMain="false" class="galleryimage subImage " width="100px" height="100px"
+                                src="./Assets/weekThree/" alt="testing components">
+
+                        </div>
+
+                    </aside>
+
+                    <aside class="componentsAside">
+                        <h3 class="componentsTitle" weekNum="3"> Components test </h3>
+                        <ul class="componentsList">
+                            <li class="linkParent"> Test Wheels </li>
+                            <li class="linkParent"> Test Pi camera</li>
+                            <li class="linkParent"> test servo Motors</li>
+                            <li class="linkParent"> test line servo sensor</li>
+                            <li class="linkParent"> Test LEDs in 4 different modes</li>
+                            <li class="linkParent"> Test line and light tracker</li>
+                            <li class="linkParent"> Test buzzer</li>
+                            <li class="linkParent"> Test voice commands</li>
+                            <li class="linkParent"> Test sound output</li>
+                        </ul>
+                    </aside>
+                </aside>
+            </section>
+
+
 
 
         </article>
@@ -240,6 +942,15 @@
 
         <!-- SVGs -->
 
+
+
+        <!-- copy icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <symbol id="COPY-ICON" viewBox="0 0 512 512" preserveAspectRatio="xMinYMin meet">
+                <path
+                    d="M0 224C0 188.7 28.65 160 64 160H128V288C128 341 170.1 384 224 384H352V448C352 483.3 323.3 512 288 512H64C28.65 512 0 483.3 0 448V224zM224 352C188.7 352 160 323.3 160 288V64C160 28.65 188.7 0 224 0H448C483.3 0 512 28.65 512 64V288C512 323.3 483.3 352 448 352H224z" />
+            </symbol>
+        </svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
             <symbol id="CALENDER_ICON" viewBox="0 0 448 512" preserveAspectRatio="xMinYMin meet">
 
@@ -255,6 +966,98 @@
                     d="M0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM175 208.1L222.1 255.1L175 303C165.7 312.4 165.7 327.6 175 336.1C184.4 346.3 199.6 346.3 208.1 336.1L255.1 289.9L303 336.1C312.4 346.3 327.6 346.3 336.1 336.1C346.3 327.6 346.3 312.4 336.1 303L289.9 255.1L336.1 208.1C346.3 199.6 346.3 184.4 336.1 175C327.6 165.7 312.4 165.7 303 175L255.1 222.1L208.1 175C199.6 165.7 184.4 165.7 175 175C165.7 184.4 165.7 199.6 175 208.1V208.1z" />
             </symbol>
         </svg>
+
+        <!-- Drop down menu icon *Filter* id="DROP-DOWN-ICON" -->
+        <svg xmlns="http://www.w3.org/2000/svg">
+            <symbol id="DROP-DOWN-ICON" viewBox="0 0 512 512" preserveAspectRatio="xMinYMin meet">
+                <path
+                    d="M310.6 246.6l-127.1 128C176.4 380.9 168.2 384 160 384s-16.38-3.125-22.63-9.375l-127.1-128C.2244 237.5-2.516 223.7 2.438 211.8S19.07 192 32 192h255.1c12.94 0 24.62 7.781 29.58 19.75S319.8 237.5 310.6 246.6z" />
+            </symbol>
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <symbol id="DROP-DOWN-MICRO-ICON" viewBox="0 0 512 512" preserveAspectRatio="xMinYMin meet">
+                <path
+                    d="M160 352h192V160H160V352zM448 176h48C504.8 176 512 168.8 512 160s-7.162-16-16-16H448V128c0-35.35-28.65-64-64-64h-16V16C368 7.164 360.8 0 352 0c-8.836 0-16 7.164-16 16V64h-64V16C272 7.164 264.8 0 256 0C247.2 0 240 7.164 240 16V64h-64V16C176 7.164 168.8 0 160 0C151.2 0 144 7.164 144 16V64H128C92.65 64 64 92.65 64 128v16H16C7.164 144 0 151.2 0 160s7.164 16 16 16H64v64H16C7.164 240 0 247.2 0 256s7.164 16 16 16H64v64H16C7.164 336 0 343.2 0 352s7.164 16 16 16H64V384c0 35.35 28.65 64 64 64h16v48C144 504.8 151.2 512 160 512c8.838 0 16-7.164 16-16V448h64v48c0 8.836 7.164 16 16 16c8.838 0 16-7.164 16-16V448h64v48c0 8.836 7.164 16 16 16c8.838 0 16-7.164 16-16V448H384c35.35 0 64-28.65 64-64v-16h48c8.838 0 16-7.164 16-16s-7.162-16-16-16H448v-64h48C504.8 272 512 264.8 512 256s-7.162-16-16-16H448V176zM384 368c0 8.836-7.162 16-16 16h-224C135.2 384 128 376.8 128 368v-224C128 135.2 135.2 128 144 128h224C376.8 128 384 135.2 384 144V368z" />
+            </symbol>
+        </svg>
+
+        <!-- login gears icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+            <symbol id="GEARS-ICON-LOGIN" viewBox="0 0 640 512" preserveAspectRatio="xMinYMin meet">
+                <path
+                    d="M286.3 155.1C287.4 161.9 288 168.9 288 175.1C288 183.1 287.4 190.1 286.3 196.9L308.5 216.7C315.5 223 318.4 232.1 314.7 241.7C312.4 246.1 309.9 252.2 307.1 257.2L304 262.6C300.1 267.6 297.7 272.4 294.2 277.1C288.5 284.7 278.5 287.2 269.5 284.2L241.2 274.9C230.5 283.8 218.3 290.9 205 295.9L198.1 324.9C197 334.2 189.8 341.6 180.4 342.8C173.7 343.6 166.9 344 160 344C153.1 344 146.3 343.6 139.6 342.8C130.2 341.6 122.1 334.2 121 324.9L114.1 295.9C101.7 290.9 89.5 283.8 78.75 274.9L50.53 284.2C41.54 287.2 31.52 284.7 25.82 277.1C22.28 272.4 18.98 267.5 15.94 262.5L12.92 257.2C10.13 252.2 7.592 247 5.324 241.7C1.62 232.1 4.458 223 11.52 216.7L33.7 196.9C32.58 190.1 31.1 183.1 31.1 175.1C31.1 168.9 32.58 161.9 33.7 155.1L11.52 135.3C4.458 128.1 1.62 119 5.324 110.3C7.592 104.1 10.13 99.79 12.91 94.76L15.95 89.51C18.98 84.46 22.28 79.58 25.82 74.89C31.52 67.34 41.54 64.83 50.53 67.79L78.75 77.09C89.5 68.25 101.7 61.13 114.1 56.15L121 27.08C122.1 17.8 130.2 10.37 139.6 9.231C146.3 8.418 153.1 8 160 8C166.9 8 173.7 8.418 180.4 9.23C189.8 10.37 197 17.8 198.1 27.08L205 56.15C218.3 61.13 230.5 68.25 241.2 77.09L269.5 67.79C278.5 64.83 288.5 67.34 294.2 74.89C297.7 79.56 300.1 84.42 304 89.44L307.1 94.83C309.9 99.84 312.4 105 314.7 110.3C318.4 119 315.5 128.1 308.5 135.3L286.3 155.1zM160 127.1C133.5 127.1 112 149.5 112 175.1C112 202.5 133.5 223.1 160 223.1C186.5 223.1 208 202.5 208 175.1C208 149.5 186.5 127.1 160 127.1zM484.9 478.3C478.1 479.4 471.1 480 464 480C456.9 480 449.9 479.4 443.1 478.3L423.3 500.5C416.1 507.5 407 510.4 398.3 506.7C393 504.4 387.8 501.9 382.8 499.1L377.4 496C372.4 492.1 367.6 489.7 362.9 486.2C355.3 480.5 352.8 470.5 355.8 461.5L365.1 433.2C356.2 422.5 349.1 410.3 344.1 397L315.1 390.1C305.8 389 298.4 381.8 297.2 372.4C296.4 365.7 296 358.9 296 352C296 345.1 296.4 338.3 297.2 331.6C298.4 322.2 305.8 314.1 315.1 313L344.1 306.1C349.1 293.7 356.2 281.5 365.1 270.8L355.8 242.5C352.8 233.5 355.3 223.5 362.9 217.8C367.6 214.3 372.5 210.1 377.5 207.9L382.8 204.9C387.8 202.1 392.1 199.6 398.3 197.3C407 193.6 416.1 196.5 423.3 203.5L443.1 225.7C449.9 224.6 456.9 224 464 224C471.1 224 478.1 224.6 484.9 225.7L504.7 203.5C511 196.5 520.1 193.6 529.7 197.3C535 199.6 540.2 202.1 545.2 204.9L550.5 207.9C555.5 210.1 560.4 214.3 565.1 217.8C572.7 223.5 575.2 233.5 572.2 242.5L562.9 270.8C571.8 281.5 578.9 293.7 583.9 306.1L612.9 313C622.2 314.1 629.6 322.2 630.8 331.6C631.6 338.3 632 345.1 632 352C632 358.9 631.6 365.7 630.8 372.4C629.6 381.8 622.2 389 612.9 390.1L583.9 397C578.9 410.3 571.8 422.5 562.9 433.2L572.2 461.5C575.2 470.5 572.7 480.5 565.1 486.2C560.4 489.7 555.6 492.1 550.6 496L545.2 499.1C540.2 501.9 534.1 504.4 529.7 506.7C520.1 510.4 511 507.5 504.7 500.5L484.9 478.3zM512 352C512 325.5 490.5 304 464 304C437.5 304 416 325.5 416 352C416 378.5 437.5 400 464 400C490.5 400 512 378.5 512 352z" />
+            </symbol>
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 640 512" xml:space="preserve">
+            <symbol id="LOGO-SEC_GUR" viewBox="0 0 640 512" preserveAspectRatio="xMinYMin meet">
+            </symbol>
+        </svg>
+
+
+        <!-- backgroundBoard -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 415 850" id="backgroundBoardSvg"
+            data-name="backgroundBoard">
+            <symbol id="backgroundBoard" viewBox="0 0 410 840" preserveAspectRatio="xMinYMin meet">
+                <polygon class="pathLineBoard"
+                    points="248.16 530.42 248.16 435.98 253.33 435.98 253.33 528.29 267.1 542.06 267.1 591.32 261.94 591.32 261.94 544.2 248.16 530.42" />
+                <polygon class="pathLineBoard"
+                    points="186.2 842.62 186.2 286.46 275.92 196.74 275.92 0 281.08 0 281.08 198.88 191.37 288.6 191.37 842.62 186.2 842.62" />
+                <polygon class="pathLineBoard"
+                    points="117.62 842.62 117.62 647.91 164.09 601.44 164.09 278.07 254.78 187.38 254.78 57.74 259.94 57.74 259.94 189.52 169.26 280.2 169.26 603.58 122.78 650.05 122.78 842.62 117.62 842.62" />
+                <polygon class="pathLineBoard"
+                    points="84.92 842.62 84.92 646.27 142.31 588.88 142.31 146.82 147.47 146.82 147.47 591.02 90.09 648.41 90.09 842.62 84.92 842.62" />
+                <polygon class="pathLineBoard"
+                    points="64.09 842.62 64.09 615.75 121.48 558.37 121.48 116.3 126.64 116.3 126.64 560.5 69.25 617.89 69.25 842.62 64.09 842.62" />
+                <polygon class="pathLineBoard"
+                    points="39.9 842.62 39.9 591.56 97.29 534.18 97.29 92.11 102.45 92.11 102.45 536.31 45.06 593.7 45.06 842.62 39.9 842.62" />
+                <rect class="pathLineBoard" x="215.46" y="435.98" width="5.16" height="327.03" />
+                <path class="pathLineBoard"
+                    d="M254.35,596.61a10.17,10.17,0,1,1,10.17,10.16A10.18,10.18,0,0,1,254.35,596.61Zm15.17,0a5,5,0,1,0-5,5A5,5,0,0,0,269.52,596.61Z" />
+                <path class="pathLineBoard"
+                    d="M207.88,768a10.17,10.17,0,1,1,10.17,10.17A10.17,10.17,0,0,1,207.88,768ZM223,768a5,5,0,1,0-5,5A5,5,0,0,0,223,768Z" />
+                <path class="pathLineBoard"
+                    d="M207.88,430.37a10.17,10.17,0,1,1,10.17,10.17A10.18,10.18,0,0,1,207.88,430.37Zm15.16,0a5,5,0,1,0-5,5A5,5,0,0,0,223,430.37Z" />
+                <path class="pathLineBoard"
+                    d="M247.2,51.47a10.17,10.17,0,1,1,10.16,10.16A10.18,10.18,0,0,1,247.2,51.47Zm15.16,0a5,5,0,1,0-5,5A5,5,0,0,0,262.36,51.47Z" />
+                <path class="pathLineBoard"
+                    d="M134.73,141.85A10.17,10.17,0,1,1,144.89,152,10.18,10.18,0,0,1,134.73,141.85Zm15.16,0a5,5,0,1,0-5,5A5,5,0,0,0,149.89,141.85Z" />
+                <path class="pathLineBoard"
+                    d="M113.9,110.4a10.17,10.17,0,1,1,10.16,10.16A10.18,10.18,0,0,1,113.9,110.4Zm15.16,0a5,5,0,1,0-5,5A5,5,0,0,0,129.06,110.4Z" />
+                <path class="pathLineBoard"
+                    d="M89.7,85.69A10.17,10.17,0,1,1,99.87,95.85,10.18,10.18,0,0,1,89.7,85.69Zm15.17,0a5,5,0,1,0-5,5A5,5,0,0,0,104.87,85.69Z" />
+                <path class="pathLineBoard"
+                    d="M240.58,430.37a10.17,10.17,0,1,1,10.17,10.17A10.18,10.18,0,0,1,240.58,430.37Zm15.17,0a5,5,0,1,0-5,5A5,5,0,0,0,255.75,430.37Z" />
+                <polygon class="pathLineBoard"
+                    points="37.54 243.81 33.89 240.15 0 274.05 0 842.62 5.16 842.62 5.16 276.18 37.54 243.81" />
+                <path class="pathLineBoard"
+                    d="M39.29,248.57A10.17,10.17,0,1,1,49.46,238.4,10.18,10.18,0,0,1,39.29,248.57Zm0-5.16a5,5,0,1,0-5-5A5,5,0,0,0,39.29,243.41Z" />
+                <polygon class="pathLineBoard"
+                    points="275.33 442.29 275.33 271.5 318.47 228.37 318.47 0 323.64 0 323.64 230.5 280.5 273.64 280.5 442.29 275.33 442.29" />
+                <path class="pathLineBoard"
+                    d="M268.17,447.93a10.17,10.17,0,1,1,10.16,10.16A10.18,10.18,0,0,1,268.17,447.93Zm15.16,0a5,5,0,1,0-5,5A5,5,0,0,0,283.33,447.93Z" />
+                <path class="pathLineBoard"
+                    d="M283.5,501.74a10.17,10.17,0,1,1,10.16-10.16A10.18,10.18,0,0,1,283.5,501.74Zm0-5.16a5,5,0,1,0-5-5A5,5,0,0,0,283.5,496.58Z" />
+                <polygon class="pathLineBoard"
+                    points="396.09 422.43 396.09 0 390.93 0 390.93 420.29 361.47 449.75 321.68 449.75 286.24 485.19 289.89 488.84 323.81 454.91 363.61 454.91 396.09 422.43" />
+                <path class="pathLineBoard"
+                    d="M299.48,520.8A10.17,10.17,0,1,1,309.65,531,10.18,10.18,0,0,1,299.48,520.8Zm15.17,0a5,5,0,1,0-5,5A5,5,0,0,0,314.65,520.8Z" />
+                <path class="pathLineBoard"
+                    d="M321.25,505.64a10.17,10.17,0,1,1,10.16,10.16A10.18,10.18,0,0,1,321.25,505.64Zm15.17,0a5,5,0,1,0-5,5A5,5,0,0,0,336.42,505.64Z" />
+                <path class="pathLineBoard"
+                    d="M342.39,490.47a10.17,10.17,0,1,1,10.16,10.16A10.17,10.17,0,0,1,342.39,490.47Zm15.17,0a5,5,0,1,0-5,5A5,5,0,0,0,357.56,490.47Z" />
+                <polygon class="pathLineBoard"
+                    points="307.07 658.89 307.07 527.26 312.23 527.26 312.23 656.75 371 715.52 371 842.62 365.84 842.62 365.84 717.66 307.07 658.89" />
+                <polygon class="pathLineBoard"
+                    points="328.83 643.41 328.83 511.78 334 511.78 334 641.27 392.76 700.04 392.76 842.62 387.6 842.62 387.6 702.18 328.83 643.41" />
+                <polygon class="pathLineBoard"
+                    points="349.97 627.92 349.97 496.29 355.13 496.29 355.13 625.79 413.9 684.56 413.9 842.62 408.74 842.62 408.74 686.7 349.97 627.92" />
+            </symbol>
+        </svg>
+
+
     </section>
 
 </body>
